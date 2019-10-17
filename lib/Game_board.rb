@@ -20,14 +20,6 @@ require_relative 'board_case' #On fait appel à BoardCase.rb
         @array_case = [[@case1, @case2, @case3],[@case4, @case5, @case6],[@case7, @case8, @case9]]
     end
 
-    def to_s
-    #Pour afficher le plateau
-        @array_case.each do |x|
-            puts "\t\t\t --- --- ---"
-            puts "\t\t\t| "+x[0].to_s+" | "+x[1].to_s+" | "+x[2].to_s+" |"
-            end
-            puts "\t\t\t --- --- ---"
-    end
 
     #On définie une méthode qui change la BoardCase jouée en fonction de la valeur du joueur (X, ou O)
     def play(valeur, case_num)
